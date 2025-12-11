@@ -1,16 +1,11 @@
-/* Background with ocean image + optional gradient overlay */
 body {
     margin: 0;
     height: 100vh;
     font-family: "Poppins", sans-serif;
-
-    /* Ocean background image */
     background-image: url('https://i.pinimg.com/736x/ff/96/63/ff9663913d2a9d7c912420bb5ba6bdbb.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    
-    /* Optional overlay to make text readable */
     position: relative;
     display: flex;
     justify-content: center;
