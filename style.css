@@ -1,0 +1,118 @@
+/* Background with ocean image + optional gradient overlay */
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+
+    /* Ocean background image */
+    background-image: url('https://i.pinimg.com/736x/ff/96/63/ff9663913d2a9d7c912420bb5ba6bdbb.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    
+    /* Optional overlay to make text readable */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Center Container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1; /* make sure form is above the overlay */
+}
+
+/* Glassmorphism Box */
+.glass-box {
+    width: 350px;
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.15); /* semi-transparent glass */
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 25px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* Title */
+.glass-box h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Inputs */
+.glass-box input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+/* Button */
+.btn {
+    width: 95%;
+    padding: 12px;
+    background: #ff4d8a;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ff2a70;
+}
+
+/* Terms & Checkbox */
+.terms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.terms input {
+    width: auto;
+    margin: 0;
+}
+
+/* Success Message */
+.success {
+    background: #9aff9a;
+    padding: 10px;
+    border-radius: 6px;
+    color: #144c14;
+    font-size: 14px;
+}
+
+/* Error Message */
+.error {
+    background: #ff9a9a;
+    padding: 10px;
+    border-radius: 6px;
+    color: #4c1414;
+    font-size: 14px;
+}
+
+/* Login Text */
+.login-text {
+    color: white;
+    margin-top: 10px;
+}
+
+.login-text a {
+    color: #ffe5ff;
+    text-decoration: underline;
+}
