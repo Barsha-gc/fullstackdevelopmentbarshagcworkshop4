@@ -12,7 +12,6 @@ body {
     align-items: center;
 }
 
-/* Center Container */
 .container {
     display: flex;
     justify-content: center;
@@ -20,8 +19,6 @@ body {
     position: relative;
     z-index: 1; /* make sure form is above the overlay */
 }
-
-/* Glassmorphism Box */
 .glass-box {
     width: 350px;
     padding: 30px;
@@ -33,13 +30,12 @@ body {
     text-align: center;
 }
 
-/* Title */
+
 .glass-box h2 {
     color: white;
     margin-bottom: 20px;
 }
 
-/* Inputs */
 .glass-box input {
     width: 90%;
     padding: 12px;
@@ -50,7 +46,6 @@ body {
     font-size: 15px;
 }
 
-/* Button */
 .btn {
     width: 95%;
     padding: 12px;
@@ -67,7 +62,6 @@ body {
     background: #ff2a70;
 }
 
-/* Terms & Checkbox */
 .terms {
     display: flex;
     justify-content: center;
@@ -83,7 +77,7 @@ body {
     margin: 0;
 }
 
-/* Success Message */
+
 .success {
     background: #9aff9a;
     padding: 10px;
@@ -91,8 +85,6 @@ body {
     color: #144c14;
     font-size: 14px;
 }
-
-/* Error Message */
 .error {
     background: #ff9a9a;
     padding: 10px;
@@ -100,8 +92,6 @@ body {
     color: #4c1414;
     font-size: 14px;
 }
-
-/* Login Text */
 .login-text {
     color: white;
     margin-top: 10px;

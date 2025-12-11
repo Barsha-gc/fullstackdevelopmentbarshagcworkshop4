@@ -3,7 +3,6 @@ $mode = isset($_GET["mode"]) ? $_GET["mode"] : "register";
 $success = "";
 $error = "";
 
-// File
 $file = "users.json";
 if (!file_exists($file)) {
     file_put_contents($file, "[]");
@@ -13,18 +12,12 @@ $users = json_decode(file_get_contents($file), true);
 if (!is_array($users)) {
     $users = [];
 }
-
-// ---------------------- REGISTER ----------------------
 if ($mode == "register" && $_SERVER["REQUEST_METHOD"] == "POST") {
 
     $name = $_POST["name"];
     $email = $_POST["email"];
     $password = $_POST["password"];
-
-    // Hash password
     $hashed = password_hash($password, PASSWORD_DEFAULT);
-
-    // Save
     $users[] = [
         "name" => $name,
         "email" => $email,
@@ -34,8 +27,6 @@ if ($mode == "register" && $_SERVER["REQUEST_METHOD"] == "POST") {
     file_put_contents($file, json_encode($users, JSON_PRETTY_PRINT));
     $success = "Registration successful!";
 }
-
-// ---------------------- LOGIN ----------------------
 if ($mode == "login" && $_SERVER["REQUEST_METHOD"] == "POST") {
 
     $email = $_POST["email"];
